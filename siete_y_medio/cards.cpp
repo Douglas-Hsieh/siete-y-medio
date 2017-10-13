@@ -1,6 +1,15 @@
+/*
+    r is a random int that decides suit and rank. suit and rank are assigned to objects in an enum (ints)
+    A Card() object is made by 
+ 
+ */
+
 #include "cards.h"
 #include <cstdlib>
 #include <iostream>
+
+
+
 
 /*
  You might or might not need these two extra libraries
@@ -20,16 +29,16 @@
  several decks of cards at the same time.
  */
 Card::Card(){
-    int r = 1 + rand() % 4;
+    int r = 1 + rand() % 4; //r is random number from 1 to 4
     switch (r) {
         case 1: suit = OROS; break;
         case 2: suit = COPAS; break;
         case 3: suit = ESPADAS; break;
         case 4: suit = BASTOS; break;
         default: break;
-    }
+    } //suit is assigned a suit
     
-    r = 1 + rand() % 10;
+    r = 1 + rand() % 10; //r is now a random number from 1 to 10
     switch (r) {
         case  1: rank = AS; break;
         case  2: rank = DOS; break;
@@ -42,7 +51,7 @@ Card::Card(){
         case  9: rank = CABALLO; break;
         case 10: rank = REY; break;
         default: break;
-    }
+    } //rank is assigned a rank
 }
 
 // Accessor: returns a string with the suit of the card in Spanish
