@@ -78,6 +78,7 @@ public:
     Player(int m);
     
     // You decide what functions you'll need...
+    int getMoney();
     
 private:
     int money;

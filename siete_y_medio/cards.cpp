@@ -224,3 +224,7 @@ Player::Player(int m)
 : money(m)
 {}
 
+int Player::getMoney()
+{
+    return money;
+}

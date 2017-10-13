@@ -11,16 +11,27 @@ using namespace std;
 
 
 // Non member functions declarations (if any)
-
+bool checkLose(Player P);
 
 // Non member functions implementations (if any)
-
+bool checkLose(Player P)
+{
+    if(P.getMoney() <= 0)
+    {
+        cout << "You have $0 You have $0. GAME OVER! Come back when you have more money. Bye.";
+        return true;
+    }
+    return false;
+}
 
 // Stub for main
 int main(){
     /* --STATEMENTS-- */
     
     Player P(100);
+    Hand H;
+    
+    
     
     
     
