@@ -19,5 +19,14 @@ using namespace std;
 // Stub for main
 int main(){
     /* --STATEMENTS-- */
+    
+    Player P(100);
+    
+    
+    
+    
+    
+    
+    
     return 0;
 }

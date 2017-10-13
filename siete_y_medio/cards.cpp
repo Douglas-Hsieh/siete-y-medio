@@ -221,6 +221,6 @@ Hand::Hand()
 
 
 Player::Player(int m)
-: money(100)
+: money(m)
 {}
 
