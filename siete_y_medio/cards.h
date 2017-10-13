@@ -67,6 +67,7 @@ public:
     
 private:
     // You decide what fields you'll need...
+    std::vector<Card> cards;
 };
 
 
